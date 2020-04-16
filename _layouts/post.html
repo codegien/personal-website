@@ -24,6 +24,10 @@
               <a href="{{ service.share_url_prefix }}{{ page.url | prepend: site.url | prepend: site.baseurl | url_encode }}" title="Share on {{ service.name }}" class="d-flex flex-items-center">
                 <div style="width:32px">{{ service.icon_svg }}</div><span class="d-none d-sm-inline-block text-gray-light">{{ service.name }}</span>
               </a>
+              <a href="{{ service.share_url_prefix }}{{ page.url | prepend: site.url | prepend: site.baseurl | url_encode }}" title="Share on {{ service.name }}" class="d-flex flex-items-center">
+                <div style="width:32px">{{ service.icon_svg }}</div><span class="d-none d-sm-inline-block text-gray-light">{{ service.name }}</span>
+              </a>
+              
             </li>
           {% endfor %}
         </ul>
